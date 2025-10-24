@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 
-export default function About() {
+export default function Dashboard() {
 const [name, setName] = useState("User");
+console.log("Dashboard logged");
+
     return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-center py-32 px-16 bg-white dark:bg-black sm:items-start">
@@ -12,6 +14,10 @@ const [name, setName] = useState("User");
         </h1>
         <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
           This is the dashboard page of the application.
+        </p>
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="mt-4 p-2 border border-gray-300 rounded" />
+        <p className="mt-2 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+          Hello, {name}!
         </p>
       </main>
     </div>
