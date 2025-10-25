@@ -14,6 +14,7 @@ export default function About() {
         <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
           This is the about page of the application.
         </p>
+        <p>{new Date().toLocaleTimeString()}</p>
       </main>
     </div>
   );
