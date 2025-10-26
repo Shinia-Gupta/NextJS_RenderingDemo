@@ -5,8 +5,8 @@ export default function InterleavingPage() {
   return (
     <div>
       <h1>Interleaving Page</h1>
-      <ServerComponentOne />
-      {/* <ClientComponentOne /> */}
+      {/* <ServerComponentOne /> */}
+      <ClientComponentOne />
     </div>
   );
 }

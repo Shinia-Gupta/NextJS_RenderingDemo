@@ -2,6 +2,7 @@
 
 import React from "react";
 import ClientComponentTwo from "./client-component-two";
+import { ServerComponentOne } from "./server-component-one";
 
 export default function ClientComponentOne() {
     const [name, setName] = React.useState("Client Component One");
@@ -10,7 +11,8 @@ export default function ClientComponentOne() {
             <div>
                 Client Component One
             </div>
-            <ClientComponentTwo />
+            {/* <ClientComponentTwo /> */}
+            <ServerComponentOne/>
         </>
     );
 }

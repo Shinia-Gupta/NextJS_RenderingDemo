@@ -8,7 +8,7 @@ export const ServerComponentOne = () => {
     <>
   <div>Server Component One</div>
   {/* <ServerComponentTwo/> */}
-  <ClientComponentOne/>
+  {/* <ClientComponentOne/> */}
 </>
 );
 }
